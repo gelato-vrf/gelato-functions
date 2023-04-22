@@ -47,7 +47,6 @@ Web3Function.onRun(async (context: Web3FunctionContext) => {
 
 
     const options = {
-        // TODO : correct the code and set to false for verifiable randomness
         disableBeaconVerification: false, // `true` disables checking of signatures on beacons - faster but insecure!!!
         noCache: false, // `true` disables caching when retrieving beacons for some providers
         chainVerificationParams: { chainHash, publicKey }  // these are optional, but recommended! They are compared for parity against the `/info` output of a given node
