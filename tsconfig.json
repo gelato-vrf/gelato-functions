@@ -1,7 +1,9 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
-    "lib": ["es2020"],
+    "lib": [
+      "es2020"
+    ],
     "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true,
@@ -9,12 +11,20 @@
     "moduleResolution": "node",
     "pretty": true,
     "resolveJsonModule": true,
-    "typeRoots": ["./node_modules/@types"],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
     "outDir": "dist",
     "rootDir": "src",
     "declaration": true,
     "useUnknownInCatchVariables": false
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "jest.config.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "jest.config.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
